@@ -10,7 +10,7 @@ public class App {
         HelloWorld beanHello2 = applicationContext.getBean("helloworld", HelloWorld.class);
         Cat beanCat1 = applicationContext.getBean("cat", Cat.class);
         Cat beanCat2 = applicationContext.getBean("cat", Cat.class);
-        System.out.println(beanHello1.equals(beanHello2));
-        System.out.println(beanCat1.equals(beanCat2));
+        System.out.println(beanHello1 == beanHello2);
+        System.out.println(beanCat1 == beanCat2);
     }
 }
