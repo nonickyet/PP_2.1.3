@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 public class AppConfig {
 
     @Bean(name = "helloworld")
+    @Scope("singleton")
     public HelloWorld getHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.setMessage("Hello World!");
